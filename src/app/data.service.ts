@@ -7,6 +7,11 @@ export class DataService {
 
   constructor(private http:HttpClient) { }
   getCountry(){
-    return this.http.get('http://restcountries.eu/rest/v2/all');
+    return this.http.get('https://restcountries.eu/rest/v2/all');
+    
+  }
+  getUsers()
+  {
+    return this.http.get('https://jsonplaceholder.typicode.com/users');
   }
 }
